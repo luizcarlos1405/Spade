@@ -41,6 +41,8 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode",
@@ -85,6 +87,8 @@ nodes = {
 "type": "Text"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode10",
@@ -118,6 +122,8 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode11",
@@ -173,6 +179,8 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode12",
@@ -195,6 +203,8 @@ nodes = {
 "type": "Text"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode13",
@@ -250,6 +260,8 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode2",
@@ -279,6 +291,8 @@ nodes = {
 "type": "Skip"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode3",
@@ -308,6 +322,8 @@ nodes = {
 "type": "Skip"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode4",
@@ -337,6 +353,8 @@ nodes = {
 "type": "Skip"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode5",
@@ -392,33 +410,13 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode6",
 "rect_position": Vector2( 779, 167 ),
 "rect_size": Vector2( 146, 227 ),
-"slot_side": 0
-}
-},
-"DialogueNode7": {
-"blocks": [ {
-"connections": [  ],
-"data": {
-"text": ""
-},
-"editor_data": {
-"filename": "res://src/Blocks/Text/TextBlock.tscn",
-"rect_min_size": Vector2( 0, 42 ),
-"slot_side": 1
-},
-"type": "Text"
-} ],
-"editor_data": {
-"collapsed": false,
-"filename": "res://src/DialogueNode/DialogueNode.tscn",
-"name": "DialogueNode7",
-"rect_position": Vector2( 1740, 827 ),
-"rect_size": Vector2( 146, 100 ),
 "slot_side": 0
 }
 },
@@ -447,6 +445,8 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode8",
@@ -469,6 +469,8 @@ nodes = {
 "type": "Text"
 } ],
 "editor_data": {
+"can_be_deleted": true,
+"can_be_renamed": true,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
 "name": "DialogueNode9",
@@ -477,7 +479,7 @@ nodes = {
 "slot_side": 0
 }
 },
-"START": {
+"Start": {
 "blocks": [ {
 "connections": [  ],
 "data": {
@@ -524,10 +526,12 @@ nodes = {
 "type": "Option"
 } ],
 "editor_data": {
+"can_be_deleted": false,
+"can_be_renamed": false,
 "collapsed": false,
 "filename": "res://src/DialogueNode/DialogueNode.tscn",
-"name": "START",
-"rect_position": Vector2( 93, 67 ),
+"name": "Start",
+"rect_position": Vector2( 87, 73 ),
 "rect_size": Vector2( 154, 250 ),
 "slot_side": 0
 }

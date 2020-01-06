@@ -3,7 +3,7 @@
 [ext_resource path="res://PGEBase/PGENode/PGENode.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/DialogueNode/DialogueNode.gd" type="Script" id=2]
 
-[node name="DialogueNode" index="0" groups=[
+[node name="DialogueNode" groups=[
 "DialogueNode",
 ] instance=ExtResource( 1 )]
 margin_right = 146.0

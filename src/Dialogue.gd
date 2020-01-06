@@ -4,7 +4,6 @@ class_name Dialogue
 Represents a dialogue graph.
 """
 
-var auto_execute_expressions: = true
 var expression_base_instance = self
 var state: = {}
 

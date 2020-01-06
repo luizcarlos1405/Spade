@@ -6,6 +6,7 @@
 margin_right = -933.0
 margin_bottom = -567.0
 type = "Skip"
+resizable = false
 
 [node name="PopupMenu" parent="." index="0"]
 items = [ "Swap slot side", null, 0, false, false, -1, 0, null, "", false, "Delete", null, 0, false, false, 1, 0, null, "", false ]
