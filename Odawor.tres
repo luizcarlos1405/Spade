@@ -1,0 +1,271 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/Dialogue.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+nodes = {
+"DialogueNode2": {
+"blocks": [ {
+"connections": [  ],
+"data": {
+"text": "..."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Text/TextBlock.tscn",
+"rect_min_size": Vector2( 0, 42 ),
+"slot_side": 1
+},
+"type": "Text"
+}, {
+"connections": [ "DialogueNode3" ],
+"data": {
+"text": "O que você está fazendo?"
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Option"
+}, {
+"connections": [ "DialogueNode4" ],
+"data": {
+"text": "Ouça-me!"
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Option"
+}, {
+"connections": [ "DialogueNode5" ],
+"data": {
+"text": "Não faço ideia do que está acontecendo."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Option"
+} ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode2",
+"rect_position": Vector2( 323, 75 ),
+"rect_size": Vector2( 194, 214 ),
+"slot_side": 0
+}
+},
+"DialogueNode3": {
+"blocks": [ {
+"connections": [  ],
+"data": "set(\"intimacy\", 1)",
+"editor_data": {
+"filename": "res://src/Blocks/Expression/ExpressionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Expression"
+}, {
+"connections": [ "DialogueNode6" ],
+"data": null,
+"editor_data": {
+"filename": "res://src/Blocks/Skip/SkipBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Skip"
+} ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode3",
+"rect_position": Vector2( 557, 41 ),
+"rect_size": Vector2( 146, 129 ),
+"slot_side": 0
+}
+},
+"DialogueNode4": {
+"blocks": [ {
+"connections": [  ],
+"data": "set(\"intimacy\", -1)",
+"editor_data": {
+"filename": "res://src/Blocks/Expression/ExpressionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Expression"
+}, {
+"connections": [ "DialogueNode6" ],
+"data": null,
+"editor_data": {
+"filename": "res://src/Blocks/Skip/SkipBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Skip"
+} ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode4",
+"rect_position": Vector2( 558, 189 ),
+"rect_size": Vector2( 146, 129 ),
+"slot_side": 0
+}
+},
+"DialogueNode5": {
+"blocks": [ {
+"connections": [  ],
+"data": "set(\"intimacy\", 0)",
+"editor_data": {
+"filename": "res://src/Blocks/Expression/ExpressionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Expression"
+}, {
+"connections": [ "DialogueNode6" ],
+"data": null,
+"editor_data": {
+"filename": "res://src/Blocks/Skip/SkipBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Skip"
+} ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode5",
+"rect_position": Vector2( 561, 336 ),
+"rect_size": Vector2( 146, 129 ),
+"slot_side": 0
+}
+},
+"DialogueNode6": {
+"blocks": [ {
+"connections": [  ],
+"data": {
+"text": "Quem ta falando isso?"
+},
+"editor_data": {
+"filename": "res://src/Blocks/Text/TextBlock.tscn",
+"rect_min_size": Vector2( 0, 55 ),
+"slot_side": 1
+},
+"type": "Text"
+}, {
+"connections": [  ],
+"data": {
+"text": "Eu, uai..."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Option"
+}, {
+"connections": [  ],
+"data": {
+"text": "Como ousa não me reconhecer?"
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Option"
+}, {
+"connections": [  ],
+"data": {
+"text": "Não sei, to só escolhendo."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Option"
+} ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode6",
+"rect_position": Vector2( 791, 170 ),
+"rect_size": Vector2( 146, 227 ),
+"slot_side": 0
+}
+},
+"DialogueNode7": {
+"blocks": [  ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode7",
+"rect_position": Vector2( 1715, 219 ),
+"rect_size": Vector2( 146, 58 ),
+"slot_side": 0
+}
+},
+"START": {
+"blocks": [ {
+"connections": [  ],
+"data": {
+"text": "Cloft, cloft..."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Text/TextBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Text"
+}, {
+"connections": [  ],
+"data": {
+"text": "Cloft..."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Text/TextBlock.tscn",
+"rect_min_size": Vector2( 0, 20 ),
+"slot_side": 1
+},
+"type": "Text"
+}, {
+"connections": [  ],
+"data": {
+"text": "Cloft, cloft, cloft.."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Text/TextBlock.tscn",
+"rect_min_size": Vector2( 0, 59 ),
+"slot_side": 1
+},
+"type": "Text"
+}, {
+"connections": [ "DialogueNode2" ],
+"data": {
+"text": "Ahm... olá."
+},
+"editor_data": {
+"filename": "res://src/Blocks/Option/OptionBlock.tscn",
+"rect_min_size": Vector2( 0, 37 ),
+"slot_side": 1
+},
+"type": "Option"
+} ],
+"editor_data": {
+"collapsed": false,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "START",
+"rect_position": Vector2( 91, 49 ),
+"rect_size": Vector2( 162, 250 ),
+"slot_side": 0
+}
+}
+}

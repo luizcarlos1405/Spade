@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://PGEBase/PGEBlock/PGEBlock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Blocks/Text/TextBlock.gd" type="Script" id=2]
+
+[node name="TextBlock" index="0" instance=ExtResource( 1 )]
+margin_right = -890.0
+margin_bottom = -558.0
+script = ExtResource( 2 )
+type = "Text"
+slots_number = 0
+
+[node name="PopupMenu" parent="." index="0"]
+items = [ "Swap slot side", null, 0, false, false, -1, 0, null, "", false, "Delete", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Parts" parent="." index="1"]
+margin_right = 132.0
+margin_bottom = 40.0
+
+[node name="Content" parent="Parts" index="0"]
+margin_right = 130.0
+margin_bottom = 38.0
+
+[node name="TextEdit" type="TextEdit" parent="Parts/Content" index="0"]
+margin_left = 6.0
+margin_top = 4.0
+margin_right = 124.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 118, 30 )
+size_flags_horizontal = 3
+highlight_all_occurrences = true
+wrap_enabled = true
+
+[node name="Slots" parent="Parts" index="1"]
+margin_left = 130.0
+margin_right = 130.0
+margin_bottom = 38.0
+
+[node name="Resizer" parent="." index="2"]
+margin_top = 34.0
+margin_right = 132.0
+margin_bottom = 40.0

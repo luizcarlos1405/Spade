@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/Dialogue.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+nodes = {
+"DialogueNode": {
+"blocks": [  ],
+"editor_data": {
+"collapsed": true,
+"filename": "res://src/DialogueNode/DialogueNode.tscn",
+"name": "DialogueNode",
+"rect_position": Vector2( 197, 169 ),
+"rect_size": Vector2( 146, 50 ),
+"slot_side": 0
+}
+}
+}
