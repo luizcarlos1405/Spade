@@ -10,4 +10,3 @@ func _ready():
 	]
 
 	set_block_options(blocks_data)
-	pass

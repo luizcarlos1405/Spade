@@ -6,7 +6,7 @@
 [ext_resource path="res://src/DialogueNode/DialogueNode.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/TestPanel/TestPanel.gd" type="Script" id=5]
 
-[node name="DialogueEditor" instance=ExtResource( 1 )]
+[node name="DialogueEditor" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 graph_class = ExtResource( 3 )
 pge_node_packed_scene = ExtResource( 4 )
