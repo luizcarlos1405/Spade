@@ -1,15 +1,24 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://PGEBase/PGEBlock/PGEBlock.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Blocks/Jump/JumpBlock.gd" type="Script" id=2]
+[ext_resource path="res://PGEBase/PGEBlock/PGEBlockPanelNormal.tres" type="StyleBox" id=3]
+[ext_resource path="res://PGEBase/PGEBlock/PGEBlockPanelSelected.tres" type="StyleBox" id=4]
 
 [node name="JumpBlock" instance=ExtResource( 1 )]
 margin_right = -923.0
 margin_bottom = -566.0
 script = ExtResource( 2 )
 type = "Jump"
+max_per_node = 0
 slots_number = 0
+slots_colors = PoolColorArray(  )
 resizable = false
+can_be_deleted = true
+can_be_moved = true
+slot_side = 1
+stylebox_normal = ExtResource( 3 )
+stylebox_selected = ExtResource( 4 )
 
 [node name="PopupMenu" parent="." index="0"]
 items = [ "Swap slot side", null, 0, false, false, -1, 0, null, "", false, "Delete", null, 0, false, false, 1, 0, null, "", false ]

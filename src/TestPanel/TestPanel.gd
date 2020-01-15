@@ -53,8 +53,8 @@ func go_to(node_name: String) -> void:
 
 	# Text type
 	var texts: Array = blocks_by_type.get("Text", [])
-	var state: GDScriptFunctionState = handle_texts(texts)
-	if state:
+	var state = handle_texts(texts)
+	if state is GDScriptFunctionState:
 		yield(state, "completed")
 
 	# Option type
@@ -65,7 +65,7 @@ func go_to(node_name: String) -> void:
 func handle_expressions(expressions: Array) -> void:
 	for expression in expressions:
 		var executor: = Expression.new()
-		var err: = executor.parse(expression.data)
+		var err: = executor.parse(expression.data.expression)
 		if err:
 			push_error("Failed parsing expression %s. Error %s: %s" %
 				[expression.data, err, executor.get_error_text()])
@@ -91,11 +91,11 @@ func handle_conditional(conditional: Dictionary) -> void:
 
 func handle_texts(texts: Array) -> GDScriptFunctionState:
 	var next_button: = Button.new()
-	next_button.text = "Next"
+	next_button.text = "[NEXT]"
 	options_container.add_child(next_button)
 
 	for i in texts.size():
-		rich_text_label.text = texts[i].data.text.format(graph.state)
+		rich_text_label.parse_bbcode(texts[i].data.text.format(graph.state))
 
 		if i < texts.size() - 1:
 			yield(next_button, "pressed")
@@ -111,4 +111,5 @@ func handle_options(options: Array) -> void:
 
 		options_container.add_child(option_button)
 
-		option_button.connect("pressed", self, "go_to", [option.connections[0]])
+		if not option.connections.empty():
+			option_button.connect("pressed", self, "go_to", [option.connections[0]])

@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://PGEBase/PGENode/PGENode.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/DialogueNode/DialogueNode.gd" type="Script" id=2]
+[ext_resource path="res://src/Blocks/Text/TextBlock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Blocks/Option/OptionBlock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Blocks/Conditional/ConditionalBlock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Blocks/Expression/ExpressionBlock.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Blocks/Skip/SkipBlock.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/Blocks/Jump/JumpBlock.tscn" type="PackedScene" id=8]
+
+
 
 [node name="DialogueNode" groups=[
 "DialogueNode",
@@ -29,8 +37,12 @@ margin_right = 134.0
 [node name="Menu" parent="Parts" index="1"]
 margin_right = 134.0
 
+[node name="PGESlot" parent="Parts/Menu" index="0"]
+color = Color( 1, 1, 1, 1 )
+
 [node name="AddBlockButton" parent="Parts/Menu" index="1"]
 margin_right = 134.0
+items = [ "Text", null, 0, false, false, 0, 0, ExtResource( 3 ), "", false, "Option", null, 0, false, false, 1, 0, ExtResource( 4 ), "", false, "Conditional", null, 0, false, false, 2, 0, ExtResource( 5 ), "", false, "Expression", null, 0, false, false, 3, 0, ExtResource( 6 ), "", false, "Skip", null, 0, false, false, 4, 0, ExtResource( 7 ), "", false, "Jump", null, 0, false, false, 5, 0, ExtResource( 8 ), "", false ]
 
 [node name="Blocks" parent="Parts" index="2"]
 margin_right = 134.0

@@ -16,13 +16,13 @@ margin_right = 89.0
 margin_bottom = 31.0
 
 [node name="Content" parent="Parts" index="0"]
-margin_right = 73.0
+margin_right = 87.0
 margin_bottom = 29.0
 
 [node name="Panel" type="Panel" parent="Parts/Content" index="0"]
 margin_left = 6.0
 margin_top = 4.0
-margin_right = 67.0
+margin_right = 81.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 0, 21 )
 mouse_filter = 2
@@ -30,11 +30,11 @@ mouse_filter = 2
 [node name="Label" type="Label" parent="Parts/Content/Panel" index="0"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-text = "SkipTo"
+text = "Skip to"
 align = 1
 
 [node name="Slots" parent="Parts" index="1"]
-margin_left = 73.0
+margin_left = 87.0
 margin_right = 87.0
 margin_bottom = 29.0
 
